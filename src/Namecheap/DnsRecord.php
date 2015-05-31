@@ -13,7 +13,7 @@ namespace Namecheap
 			'hostId'	=> null,
 			'host'		=> null,
 			'type'		=> 'A',
-			'data'		=> null,
+			'address'	=> null,
 			'mxPref'	=> 0,
 			'ttl'		=> 1800,
 		);
