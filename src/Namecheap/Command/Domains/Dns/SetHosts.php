@@ -43,7 +43,7 @@ namespace Namecheap\Command\Domains\Dns
 				$this->setParams(array(
 					'HostName' . $i		=> $host->host,
 					'RecordType' . $i	=> $host->type,
-					'Address' . $i		=> $host->data,
+					'Address' . $i		=> $host->address,
 					'MXPref' . $i		=> $host->mxPref,
 					'TTL' . $i			=> $host->ttl,
 				));

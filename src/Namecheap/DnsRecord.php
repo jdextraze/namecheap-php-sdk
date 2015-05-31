@@ -36,8 +36,8 @@ namespace Namecheap
 					case 'Type':
 						$key = 'type'; break;
 
-					case 'Data':
-						$key = 'data'; break;
+					case 'Address':
+						$key = 'address'; break;
 
 					case 'MXPref':
 						$key = 'mxPref'; break;
@@ -179,13 +179,13 @@ namespace Namecheap
 		}
 
 		/**
-		 * Set record data
+		 * Set record address
 		 * @param string $value
 		 * @return DnsRecord
 		 */
-		public function setData($value)
+		public function setAddress($value)
 		{
-			$this->_data['data'] = (string) substr($value, 0, 200);
+			$this->_data['address'] = (string) substr($value, 0, 200);
 			return $this;
 		}
 
@@ -239,12 +239,12 @@ namespace Namecheap
 		}
 
 		/**
-		 * Get data
+		 * Get address
 		 * @return string
 		 */
-		public function getData()
+		public function getAddress()
 		{
-			return (string) $this->_data['data'];
+			return (string) $this->_data['address'];
 		}
 
 		/**
